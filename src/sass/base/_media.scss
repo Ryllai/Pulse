@@ -1,0 +1,119 @@
+@media(max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        width: 85%;
+    }
+    .header__phone {
+        font-size: 16px;
+    }
+    .header__logo {
+        width: 220px;
+    }
+    .promo__header {
+        font-size: 38px;
+    }
+    .promo__subheader {
+        font-size: 21px;
+    }
+    .benefits__icons {
+        width: 220px;
+    }
+    .button_main {
+        width: 255px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo {
+        width: 200px;
+    }
+    .benefits__icons {
+        width: 200px;
+    }
+    .promo__header {
+        font-size: 34px;
+    }
+    .promo__subheader {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        display: block;
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            margin-top: 20px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        .button {
+            margin-top: 5px;
+        }
+    }
+
+    .promo {
+        padding-bottom: 60px;
+        &__wrapper {
+            margin-top: 55px;
+            align-items: flex-end;
+        }
+        &__icons {
+            margin-top: 45px;
+            width: 277px;
+        }
+        &__icon {
+            font-size: 12px;
+        }
+        &__header {
+            font-size: 31px;
+            text-align: center;
+            line-height: 44px;
+        }
+        &__subheader {
+            font-size: 15px;
+            text-align: center;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .button_main {
+        width: 180px;
+        font-size: 12px;
+        margin-top: 50px;
+    }
+    .benefits {
+        padding: 45px 0 45px 0;
+        &__wrapper {
+            margin-top: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icons {
+            margin-top: 50px;
+            width: 231px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &__text {
+            margin-top: 9px;
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+    }
+    .title {
+        font-size: 22px;
+    }
+}
