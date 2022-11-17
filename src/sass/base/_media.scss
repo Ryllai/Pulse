@@ -7,23 +7,100 @@
     .container {
         width: 85%;
     }
-    .header__phone {
-        font-size: 16px;
+    .header {
+        &__official span {
+            font-size: 15px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__logo {
+            width: 220px;
+        }
     }
-    .header__logo {
-        width: 220px;
-    }
-    .promo__header {
-        font-size: 38px;
-    }
-    .promo__subheader {
-        font-size: 21px;
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 21px;
+        }
     }
     .benefits__icons {
         width: 220px;
     }
     .button_main {
         width: 255px;
+    }
+    .carousel {
+        &__inner {
+            width: 80%;
+            div {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0;
+                padding-left: 0;
+                margin-top: 25px;
+                li {
+                    list-style: none;
+                    margin: 5px 6px 0px 6px;
+                }
+                li.slick-active button {
+                    transition: 0.5s all;
+                    background-color: $main-color;
+                }
+                button {
+                    font-size: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #6b6b6b;
+                    border-radius: 200%;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .review {
+        &__wrapper {
+            max-width: 780px;
+        }
+    }
+    .footer {
+        height: 100%;
+        &__info {
+            width: 437px;
+            height: 180px;
+            right: 0;
+            left: auto;
+            transform: translate(0%);
+            padding-top: 26px;
+        }
+        &__map {
+            display: none;
+        }
+        &__map_tablet {
+            display: block;
+        }
+        &__addr {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-bottom: 16px;
+            font-size: 17px;
+        }
     }
 }
 
@@ -40,6 +117,7 @@
     .promo__subheader {
         font-size: 18px;
     }
+    
 }
 
 @media (max-width: 575px) {
@@ -177,6 +255,7 @@
             margin: 0 5px 10px 0;
         }
         &__content {
+            justify-content: center;
             margin-top: 40px;
         }
         &-item {
@@ -243,6 +322,38 @@
         &__photo {
             width: 120px;
             height: 120px;
+        }
+    }
+    .footer {
+        height: 100%;
+        &__map {
+            display: none;
+        }
+        &__map_mobile {
+            display: block;
+        }
+        &__info {
+            position: static;
+            transform: translateX(0%);
+            width: 100%;
+            padding: 35px;
+            height: 190px;
+        }
+        &__addr {
+            font-size: 12px;
+            margin-bottom: 13px;
+        }
+        &__phone {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        &__social-item {
+            margin: 0 10px;
+            width: 30px;
+            height: 30px;
+            img {
+                height: 15px;
+            }
         }
     }
 }

@@ -1,6 +1,12 @@
 .footer {
     height: 630px;
     position: relative;
+    &__map_tablet {
+        display: none;
+    }
+    &__map_mobile {
+        display: none;
+    }
     &__info {
         position: absolute;
         top: 0;
