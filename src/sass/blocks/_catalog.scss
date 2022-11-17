@@ -43,6 +43,12 @@
         flex-wrap: wrap;
         &_active {
             display: flex;
+            &_second {
+                justify-content: center;
+            }
+            &_third {
+                justify-content: center;
+            }
         }
     }
     &-item {
@@ -52,6 +58,9 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         margin-bottom: 20px;
+        &_third {
+            margin: 0 20px;
+        }
         &__img {
             display: block;
             margin: 0 auto;
@@ -112,7 +121,7 @@
         &__content {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-110%);
             transition: 0.5s all;
             &_active {
                 transform: translateX(0%);
